@@ -1,5 +1,8 @@
 import discord
 from keepAlive import keep_alive
+codeFile = open("botCode.txt", "r", 59)
+code = codeFile.read(59)
+codeFile.close()
 
 client = discord.Client()
 
@@ -9,4 +12,4 @@ async def on_ready():
 
 
 keep_alive() 
-client.run("OTQ2ODU3MjQ0MTU3NDE1NDU1.Yhkzhg.QQS0749PgO46Un2sOQ9ikeb3jrw")
+client.run(code)
